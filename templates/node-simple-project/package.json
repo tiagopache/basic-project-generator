@@ -1,11 +1,20 @@
 {
-  "main": "src/index.js",
+  "engines": {
+    "node": ">= 12.3.0"
+  },
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "cross-env NODE_PATH=. NODE_ENV=development node",
+    "dev-debug": "cross-env NODE_PATH=. NODE_ENV=development node --inspect=0.0.0.0:9229 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint {src, test, config}/**/*.js"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0"
+  }
 }
