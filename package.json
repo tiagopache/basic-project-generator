@@ -1,0 +1,29 @@
+{
+  "name": "basic-project-generator",
+  "version": "1.0.0",
+  "description": "basic project generator for node applications",
+  "main": "index.js",
+  "bin": {
+    "basic-project": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project",
+    "node",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagopache/basic-project-generator.git"
+  },
+  "author": "Tiago Pache <tiagopache@gmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
